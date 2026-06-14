@@ -21,6 +21,9 @@ export default function OceanDepthEffect() {
     window.addEventListener('resize', setCanvasSize)
 
     // Particle system for subtle floating particles
+    const canvasWidth = canvas.width
+    const canvasHeight = canvas.height
+
     class Particle {
       x: number
       y: number
@@ -29,8 +32,8 @@ export default function OceanDepthEffect() {
       opacity: number
 
       constructor() {
-        this.x = Math.random() * canvas.width
-        this.y = Math.random() * canvas.height
+        this.x = Math.random() * canvasWidth
+        this.y = Math.random() * canvasHeight
         this.size = Math.random() * 2 + 0.5
         this.speedY = Math.random() * 0.3 + 0.1
         this.opacity = Math.random() * 0.3 + 0.1
@@ -39,8 +42,8 @@ export default function OceanDepthEffect() {
       update() {
         this.y -= this.speedY
         if (this.y < -10) {
-          this.y = canvas.height + 10
-          this.x = Math.random() * canvas.width
+          this.y = canvasHeight + 10
+          this.x = Math.random() * canvasWidth
         }
       }
 
