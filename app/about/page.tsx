@@ -56,11 +56,11 @@ export default function AboutPage() {
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-96 rounded-xl overflow-hidden">
-              <Image src="/images/about/founder.jpg" alt="Kandala Praveen Kumar" fill className="object-cover" />
+              <Image src="/images/about/founder.jpg" alt="Kambala Praveen Kumar" fill className="object-cover" />
             </div>
             <div>
               <h2 className="text-3xl font-bold text-primary-800 mb-4">Founder's Message</h2>
-              <p className="text-lg text-gray-700 mb-4 font-semibold">Kandala Praveen Kumar</p>
+              <p className="text-lg text-gray-700 mb-4 font-semibold">Kambala Praveen Kumar</p>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
                   Our journey began with a simple vision: to provide farmers with the highest quality shrimp seed that would ensure their success and prosperity. Today, we stand proud as a leading hatchery committed to excellence, innovation, and sustainability.
